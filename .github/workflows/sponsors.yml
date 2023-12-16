@@ -1,0 +1,29 @@
+name: Generate Current Sponsors Image
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  update-sponsors:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm i
+
+      - name: Update sponsors images
+        run: npm run build
+        env:
+          SPONSORKIT_GITHUB_TOKEN: ${{ secrets.SPONSORKIT_TOKEN }}
+          SPONSORKIT_GITHUB_LOGIN: GregoryConrad
+
+      - name: Commit
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: 'chore: update sponsors images'
+          add: 'sponsor*'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
