@@ -7,3 +7,9 @@ Currently, I’m maintaining a few libraries I developed for Rust and Dart/Flutt
 - ♾️ ReArch (novel approach to application architecture across languages)
 - 🔎 Mimir (Dart/Flutter embedded database featuring typo-tolerant and relevant full-text search)
 - 🪆 Unnested (easy way to un-nest your Flutter Widget trees)
+
+## Sponsors
+You can become a sponsor of my work [here!](https://github.com/sponsors/GregoryConrad)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/GregoryConrad/GregoryConrad/main/sponsorkit/sponsors.svg"/>
+</p>
