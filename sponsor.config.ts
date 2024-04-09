@@ -18,17 +18,17 @@ export default defineConfig({
     },
     {
       title: '🥉 Sponsors',
-      monthlyDollars: 25,
+      monthlyDollars: 32,
       preset: presets.medium,
     },
     {
       title: '🥈 Sponsors',
-      monthlyDollars: 50,
+      monthlyDollars: 64,
       preset: presets.large,
     },
     {
       title: '🥇 Sponsors',
-      monthlyDollars: 100,
+      monthlyDollars: 128,
       preset: presets.xl,
     },
   ],
